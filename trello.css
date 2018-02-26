@@ -1,0 +1,5 @@
+.global-header {
+background: rgba(0,121,191,0);
+-webkit-transition:background 1s ease 0s;
+transition:background 1s ease 0s;
+}
