@@ -1,0 +1,47 @@
+$blue-navbar: #026aa7;
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    height: 50px;
+    background: $blue-navbar;
+    
+
+    .btn-wrapper {
+        position: relative;
+        width: 100px;
+        input [type="button"] {
+            width: 50px;
+        }
+        .btn-text {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .search-wrapper {
+        position:relative;
+        margin-right: auto;
+
+        & button {
+            position: absolute;
+            top:0;
+            right:0;
+            bottom: 0;
+        }
+    }
+
+    .btn-right-group-container {
+        margin-left: auto;
+        
+    .btn-circle {
+        border-radius: 50%;
+        background: lightgrey;
+        border: 0;
+        outline: 0;
+    }
+       
+    }
+}
