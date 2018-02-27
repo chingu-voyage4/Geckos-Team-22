@@ -1,0 +1,23 @@
+{
+  "name": "geckos-team-22",
+  "version": "1.0.0",
+  "description": "Voyage-4 [![Waffle.io - Columns and their card count](https://badge.waffle.io/chingu-voyage4/Geckos-Team-22.svg?columns=all)](https://waffle.io/chingu-voyage4/Geckos-Team-22)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chingu-voyage4/Geckos-Team-22.git"
+  },
+  "author": "Saria, Simmon & Jonathan.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chingu-voyage4/Geckos-Team-22/issues"
+  },
+  "homepage": "https://github.com/chingu-voyage4/Geckos-Team-22#readme",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
