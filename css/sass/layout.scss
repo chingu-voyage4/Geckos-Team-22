@@ -52,7 +52,6 @@ $white-primary-color: #ececec;
         justify-content: space-around;
         flex-wrap: nowrap;
         margin-left: auto;
-        min-width: 150px;
     }
 }
 
@@ -72,5 +71,10 @@ $white-primary-color: #ececec;
             position: static;
         }
     }
-    .btn-right-group-container {}
+    .btn-right-group-container {
+        padding: 0 20px;
+        .info-btn {
+            display: none;
+        }
+    }
 }
