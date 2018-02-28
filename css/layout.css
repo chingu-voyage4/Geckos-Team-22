@@ -39,8 +39,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    margin-left: auto;
-    min-width: 150px; }
+    margin-left: auto; }
 
 @media (max-width: 760px) {
   .board-btn {
@@ -53,6 +52,11 @@
     .search-wrapper .search-box {
       display: none; }
     .search-wrapper .search-btn {
-      position: static; } }
+      position: static; }
+
+  .btn-right-group-container {
+    padding: 0 20px; }
+    .btn-right-group-container .info-btn {
+      display: none; } }
 
 /*# sourceMappingURL=layout.css.map */

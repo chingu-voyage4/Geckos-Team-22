@@ -2,22 +2,15 @@
   box-sizing: border-box;
   font: 1em/1.5 sans-serif; }
 
-a {
-  color: inherit; }
-  a:hover {
-    text-decoration: none; }
-  a:visited {
-    text-decoration: none; }
-  a:focus {
-    text-decoration: none; }
-
-.logo {
+.logo > a {
+  text-decoration: none;
+  /* no underline */
   color: #979797;
-  font-size: 2em;
+  font-size: 2.2em;
+  letter-spacing: 1px;
   font-weight: 600;
-  font-family: 'Times New Roman', Times, serif;
-  cursor: pointer; }
-  .logo:hover {
+  font-family: 'Dancing Script', cursive; }
+  .logo > a:hover {
     color: #ececec; }
 
 .pointer {
