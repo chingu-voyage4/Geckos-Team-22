@@ -1,6 +1,5 @@
 $blue-navbar: #026aa7;
 $white-primary-color: #ececec;
-
 .navbar {
     display: flex;
     flex-direction: row;
@@ -33,9 +32,9 @@ $white-primary-color: #ececec;
             &:focus {
                 width: 300px;
                 background: $white-primary-color;
-            & ~ * {
-                display: none;
-            }
+                &~* {
+                    display: none;
+                }
             }
         }
         .search-btn {
@@ -73,7 +72,5 @@ $white-primary-color: #ececec;
             position: static;
         }
     }
-    .btn-right-group-container {
-        
-    }
+    .btn-right-group-container {}
 }
