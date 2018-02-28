@@ -33,6 +33,9 @@ $white-primary-color: #ececec;
             &:focus {
                 width: 300px;
                 background: $white-primary-color;
+            & ~ * {
+                display: none;
+            }
             }
         }
         .search-btn {
@@ -69,5 +72,8 @@ $white-primary-color: #ececec;
         .search-btn {
             position: static;
         }
+    }
+    .btn-right-group-container {
+        
     }
 }

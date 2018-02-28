@@ -26,6 +26,8 @@
       .navbar .search-wrapper .search-box:focus {
         width: 300px;
         background: #ececec; }
+        .navbar .search-wrapper .search-box:focus ~ * {
+          display: none; }
     .navbar .search-wrapper .search-btn {
       position: absolute;
       top: 0;
