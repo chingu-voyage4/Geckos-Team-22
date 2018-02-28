@@ -38,7 +38,7 @@ $blue-search-hover-color: #74cae7;
 //NAVBAR BUTTON COMPONENTS
 //===================
     
-    &__btn-primary,
+    &__btn-primary
     {
         background: $blue-primary-color;
         @include removeOutsideLines();
