@@ -48,12 +48,29 @@ $blue-navbar: #026aa7;
     }
 }
         
-    .btn-circle {
-        border-radius: 50%;
-        background: lightgrey;
-        border: 0;
-        outline: 0;
+@media (max-width: 760px) {
+    .board-btn {
+        position: static;
+        .board-text {
+            display: none;
+        }
     }
+    .search-wrapper {
+        margin-left: 30px;
+        .search-box {
+            display: none;
+    }
+        .search-btn {
+            position: static;
        
+    }
+}       margin-left: 30px;
+        .search-box {
+            display: none;
+        }
+        .search-btn {
+            position: static;
+            
+        }
     }
 }
