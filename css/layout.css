@@ -1,53 +1,105 @@
-.navbar {
-  display: flex;
-  flex-direction: row;
-  padding: 5px 10px;
-  align-items: center;
-  height: 40px;
-  background: #026aa7;
-  position: relative;
-  /*Board Button*/
-  /*Search Bar*/ }
-  .navbar * {
-    height: 100%; }
-  .navbar .board-btn {
-    display: inline;
-    padding: 5px;
-    margin-right: 10px; }
-    .navbar .board-btn * {
-      display: inline; }
-    .navbar .board-btn .board-text {
-      font-weight: bold; }
-  .navbar .search-wrapper {
-    position: relative;
-    margin-right: 10px; }
-    .navbar .search-wrapper .search-box {
-      width: 200px; }
-    .navbar .search-wrapper .search-btn {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0; }
-  .navbar .logo {
-    margin-left: auto; }
-  .navbar .btn-right-group-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    margin-left: auto;
-    min-width: 150px; }
+/*
+Error: Undefined variable: "$white-primary-color".
+        on line 33 of layout.scss
 
-@media (max-width: 760px) {
-  .board-btn {
-    position: static; }
-    .board-btn .board-text {
-      display: none; }
+28:         margin-right: 10px;
+29:         .search-box {
+30:             width: 200px;
+31:             &:focus {
+32:                 width: 300px;
+33:                 background: $white-primary-color;
+34:             }
+35:         }
+36:         .search-btn {
+37:             position: absolute;
+38:             top: 0;
 
-  .search-wrapper {
-    margin-left: 30px; }
-    .search-wrapper .search-box {
-      display: none; }
-    .search-wrapper .search-btn {
-      position: static; } }
-
-/*# sourceMappingURL=layout.css.map */
+Backtrace:
+layout.scss:33
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/home/skid/.rvm/gems/ruby-2.3.4/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$white-primary-color\".\A         on line 33 of layout.scss\A \A 28:         margin-right: 10px;\A 29:         .search-box {\A 30:             width: 200px;\A 31:             &:focus {\A 32:                 width: 300px;\A 33:                 background: $white-primary-color;\A 34:             }\A 35:         }\A 36:         .search-btn {\A 37:             position: absolute;\A 38:             top: 0;"; }
