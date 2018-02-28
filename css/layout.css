@@ -36,10 +36,12 @@
   .navbar .logo {
     margin-left: auto; }
   .navbar .btn-right-group-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    display: inline-flex;
     margin-left: auto; }
+    .navbar .btn-right-group-container > * {
+      margin-right: 10px; }
+    .navbar .btn-right-group-container > *:last-child {
+      margin-right: 0; }
 
 @media (max-width: 760px) {
   .board-btn {
@@ -54,9 +56,7 @@
     .search-wrapper .search-btn {
       position: static; }
 
-  .btn-right-group-container {
-    padding: 0 20px; }
-    .btn-right-group-container .info-btn {
-      display: none; } }
+  .btn-right-group-container .info-btn {
+    display: none; } }
 
 /*# sourceMappingURL=layout.css.map */
