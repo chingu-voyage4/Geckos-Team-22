@@ -1,42 +1,76 @@
-$blue-start-component-color: #00a2ff;
-$blue--hover-component-color: #0044ff;
-$blue--active-component-color: #0000ff;
+//PART OF THE BEM GUIDE WAS FOLLOWED WHEN NAMING THE VARIABLES.
+//HERE IS AN INTRO LINK: http://getbem.com/introduction/
+//------------
+//THREE STYLESHEETS ARE USED
+//components.scss - Used for button, text boxes, search boxes, any <input> elements 
+//with only component styling (modifications to the colors)
+//layout.scss - Used for sizing (components might be included in sizing) 
+//and placement of elements with only section styling
+//styles.scss - Used for extra styling that does not fit the two stylesheets above
+//-----------
+//==================
+
+//General Colors
 $white-primary-color: #ececec;
+$blue-primary-color: #00a2ff;
+
+//Button Colors
+$blue-btn-hover-color: #0044ff;
+$blue-btn-active-color: #0000ff;
+
+//Search Colors
+$blue-search-hover-color: #74cae7;
 
 @mixin border-radius($radius) {
     /* Safari 3-4, iOS 1-3.2, Android 1.6- */
-  -webkit-border-radius: $radius; 
-
-  /* Firefox 1-3.6 */
-  -moz-border-radius: $radius; 
-  
-  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
-  border-radius: $radius; 
+    -webkit-border-radius: $radius;
+    /* Firefox 1-3.6 */
+    -moz-border-radius: $radius;
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: $radius;
 }
-
-.btn--pointer {
-    cursor: pointer;
+@mixin removeOutsideLines($border: 0, $outline: 0) {
+    border: $border;
+    outline: $outline;
 }
+.navbar {
+//===================
+//NAVBAR BUTTON COMPONENTS
+//===================
+    
+    &__btn-primary,
+    {
+        background: $blue-primary-color;
+        @include removeOutsideLines();
+        @include border-radius(2px);
+    }
+    &__btn--darken-bg:hover {
+        background: $blue-btn-hover-color;
+    }
+    &__btn--darken-bg:active {
+        background: $blue-btn-active-color;
+    }
+    &__btn-circle {
+        border-radius: 50%;
+        @include removeOutsideLines()
+    }
 
-.btn--darken-bg:hover {
-    background: $blue--hover-component-color;
-}
+//===================
+//NAVBAR SEARCH COMPONENTS
+//===================
+    &__search-primary {
+        background: $blue-primary-color;
+        @include removeOutsideLines();
+        @include border-radius(2px);
+    }
+    &__search--highlight:hover {
+        background: $blue-search-hover-color;
+    }
 
-.btn--darken-bg:active {
-    background: $blue--active-component-color;
 }
+/*NAVBAR COMPONENTS END*/
 
 .btn--transparent-bg {
     background: Transparent;
-    outline: 0;
-    border: 0;
-}
-
-.btn-primary,
-.default-component-props {
-    background: $blue-start-component-color;
-    color: $white-primary-color;
-    outline: 0;
-    border: 0;
-    @include border-radius(2px);
+    @include removeOutsideLines();
 }

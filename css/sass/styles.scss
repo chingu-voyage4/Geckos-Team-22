@@ -1,0 +1,27 @@
+
+$white-primary-color: #ececec;
+$grey-logo-color: #979797;
+
+* {
+    box-sizing: border-box;
+    font: 1em/1.5 sans-serif;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+.logo {
+    color: $grey-logo-color;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+
+    &:hover {
+        color: $white-primary-color;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
