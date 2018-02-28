@@ -48,10 +48,14 @@ $white-primary-color: #ececec;
         margin-left: auto;
     } //Right Group Buttons
     .btn-right-group-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: nowrap;
+        display: inline-flex;
         margin-left: auto;
+        &>* {
+            margin-right: 10px;
+        }
+        &>*:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -72,7 +76,6 @@ $white-primary-color: #ececec;
         }
     }
     .btn-right-group-container {
-        padding: 0 20px;
         .info-btn {
             display: none;
         }
