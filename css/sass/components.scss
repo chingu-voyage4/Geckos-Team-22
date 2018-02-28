@@ -66,10 +66,15 @@ $blue-search-hover-color: #74cae7;
     &__search--highlight:hover {
         background: $blue-search-hover-color;
     }
-
+    &__search--expand:focus {
+            width: 300px;
+    }
 }
 /*NAVBAR COMPONENTS END*/
 
+//===================
+//GENERAL BUTTON COMPONENTS
+//===================
 .btn--transparent-bg {
     background: Transparent;
     @include removeOutsideLines();
