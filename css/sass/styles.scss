@@ -7,20 +7,18 @@ $grey-logo-color: #979797;
     font: 1em/1.5 sans-serif;
 }
 
-a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
-}
-.logo {
+.logo > a {
+    text-decoration: none; /* no underline */
     color: $grey-logo-color;
-    font-size: 2em;
+    font-size: 2.2em;
+    letter-spacing: 1px;
     font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
-
+    font-family: 'Dancing Script', cursive;
     &:hover {
         color: $white-primary-color;
     }
 }
+
 
 .pointer {
     cursor: pointer;
