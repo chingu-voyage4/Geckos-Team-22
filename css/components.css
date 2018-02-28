@@ -28,8 +28,6 @@
   border-radius: 2px; }
 .navbar__search--highlight:hover {
   background: #74cae7; }
-.navbar__search--expand:focus {
-  width: 300px; }
 
 /*NAVBAR COMPONENTS END*/
 .btn--transparent-bg {
