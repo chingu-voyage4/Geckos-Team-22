@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font: 1em/1.5 sans-serif; }
+
+a {
+  color: inherit; }
+  a:hover {
+    text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none; }
+
+.logo {
+  color: #979797;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer; }
+  .logo:hover {
+    color: #ececec; }
+
+.pointer {
+  cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */

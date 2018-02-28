@@ -1,34 +1,53 @@
-.navbar-container {
+.navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
   padding: 5px 10px;
-  height: 50px;
-  background: #026aa7; }
-  .navbar-container .btn-wrapper {
+  align-items: center;
+  height: 40px;
+  background: #026aa7;
+  position: relative;
+  /*Board Button*/
+  /*Search Bar*/ }
+  .navbar * {
+    height: 100%; }
+  .navbar .board-btn {
+    display: inline;
+    padding: 5px;
+    margin-right: 10px; }
+    .navbar .board-btn * {
+      display: inline; }
+    .navbar .board-btn .board-text {
+      font-weight: bold; }
+  .navbar .search-wrapper {
     position: relative;
-    width: 100px; }
-    .navbar-container .btn-wrapper input [type="button"] {
-      width: 50px; }
-    .navbar-container .btn-wrapper .btn-text {
+    margin-right: 10px; }
+    .navbar .search-wrapper .search-box {
+      width: 200px; }
+    .navbar .search-wrapper .search-btn {
       position: absolute;
       top: 0;
-      right: 0;
-      bottom: 0; }
-  .navbar-container .search-wrapper {
-    position: relative;
-    margin-right: auto; }
-    .navbar-container .search-wrapper button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0; }
-  .navbar-container .btn-right-group-container {
+      bottom: 0;
+      right: 0; }
+  .navbar .logo {
     margin-left: auto; }
-    .navbar-container .btn-right-group-container .btn-circle {
-      border-radius: 50%;
-      background: lightgrey;
-      border: 0;
-      outline: 0; }
+  .navbar .btn-right-group-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    min-width: 150px; }
+
+@media (max-width: 760px) {
+  .board-btn {
+    position: static; }
+    .board-btn .board-text {
+      display: none; }
+
+  .search-wrapper {
+    margin-left: 30px; }
+    .search-wrapper .search-box {
+      display: none; }
+    .search-wrapper .search-btn {
+      position: static; } }
 
 /*# sourceMappingURL=layout.css.map */
