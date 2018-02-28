@@ -6,11 +6,11 @@ $blue-navbar: #026aa7;
     align-items: center;
     height: 40px;
     background: $blue-navbar;
-        position: relative;
+    position: relative;
     /*Board Button*/
     * {
         height: 100%;
-        }
+    }
     .board-btn {
         display: inline;
         padding: 5px;
@@ -20,7 +20,7 @@ $blue-navbar: #026aa7;
         }
         .board-text {
             font-weight: bold;
-    }
+        }
     }
     /*Search Bar*/
     .search-wrapper {
@@ -34,7 +34,7 @@ $blue-navbar: #026aa7;
             top: 0;
             bottom: 0;
             right: 0;
-    }
+        }
     } //Navbar Logo
     .logo {
         margin-left: auto;
@@ -47,7 +47,7 @@ $blue-navbar: #026aa7;
         min-width: 150px;
     }
 }
-        
+
 @media (max-width: 760px) {
     .board-btn {
         position: static;
@@ -57,14 +57,6 @@ $blue-navbar: #026aa7;
     }
     .search-wrapper {
         margin-left: 30px;
-        .search-box {
-            display: none;
-    }
-        .search-btn {
-            position: static;
-       
-    }
-}       margin-left: 30px;
         .search-box {
             display: none;
         }
