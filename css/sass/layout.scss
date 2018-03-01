@@ -1,5 +1,6 @@
 $blue-navbar: #026aa7;
 $white-primary-color: #ececec;
+$sm-margin: 10px;
 .navbar {
     display: flex;
     flex-direction: row;
@@ -15,7 +16,7 @@ $white-primary-color: #ececec;
     .board-btn {
         display: inline;
         padding: 5px;
-        margin-right: 10px;
+        margin-right: $sm-margin;
         * {
             display: inline;
         }
@@ -26,7 +27,7 @@ $white-primary-color: #ececec;
     /*Search Bar*/
     .search-wrapper {
         position: relative;
-        margin-right: 10px;
+        margin-right: $sm-margin;
         .search-box {
             width: 200px;
             &:focus {
@@ -51,7 +52,7 @@ $white-primary-color: #ececec;
         display: inline-flex;
         margin-left: auto;
         &>* {
-            margin-right: 10px;
+            margin-right: $sm-margin;
         }
         &>*:last-child {
             margin-right: 0;
