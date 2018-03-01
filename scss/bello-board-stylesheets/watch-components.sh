@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sass --watch components.scss:../components.css
+sass --watch components.scss:../../css/components.css

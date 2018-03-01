@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sass --watch layout.scss:../layout.css
+sass --watch layout.scss:../../css/layout.css
