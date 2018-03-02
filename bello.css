@@ -1,5 +1,51 @@
+
+.body{
+  font-size:20px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #4d4d4d;
+}
 .global-header {
 background: rgba(0,121,191,0);
 -webkit-transition:background 1s ease 0s;
 transition:background 1s ease 0s;
+}
+
+.blue-bg {
+  background-color: #0079bf;
+  color: #ffffff;
+}
+
+.logo {
+  width: 50%;
+
+}
+
+.layout-centered {
+  padding: 3em 1em;
+  /* find out what a word-break is */
+  word-break: break-word; 
+}
+.layout-centered.mod-white-text{
+  color: #ffffff;
+}
+.header-section.layout-centered {
+  background: url("https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/d84b3c6b1f07d701acb1a153002f7e6a/usecases-bg.jpg") center left/ cover no-repeat #0079bf;
+}
+
+.layout-centered-content{
+margin: 0 auto;
+max-width: 650px;
+}
+.u-center-text {
+  text-align: center;
+}
+
+.board-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.background-dark-main{
+  background: #315989;
 }
