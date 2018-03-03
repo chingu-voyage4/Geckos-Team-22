@@ -46,7 +46,11 @@ $sm-margin: 10px;
         }
     } //Navbar Logo
     .logo {
-        margin-left: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-40%);
+        z-index: 1;
     } //Right Group Buttons
     .btn-right-group-container {
         display: inline-flex;
@@ -60,25 +64,34 @@ $sm-margin: 10px;
     }
 }
 
-@media only screen and (max-width: 760px) {
-    .board-btn {
-        position: static;
-        .board-text {
-            display: none;
+@media only screen and (max-width: 800px) {
+    .navbar {
+        .board-btn {
+            position: static;
+            .board-text {
+                display: none;
+            }
         }
-    }
-    .search-wrapper {
-        margin-left: 30px;
-        .search-box {
-            display: none;
+        .search-wrapper {
+            margin-left: 30px;
+            .search-box {
+                display: none;
+            }
         }
         .search-btn {
             position: static;
         }
-    }
-    .btn-right-group-container {
-        .info-btn {
-            display: none;
+        .logo {
+            display: block;
+            position: static;
+            transform: translateY(0);
+            margin-left: auto;
+        }
+        .btn-right-group-container {
+            margin-left: auto;
+            .info-btn {
+                display: none;
+            }
         }
     }
 }
