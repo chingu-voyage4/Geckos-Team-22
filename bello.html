@@ -28,13 +28,30 @@ Testing
   <div class="layout-centered-content">
     <p>Already use Bello
         <a href="#">Sign In</a>
-    </p>
-    
+    </p>  
   </div>
   
 </div>
 
-<div id="board-container background-dark-main mod-white-text u-center-text layout-centered"></div>
+<div class="board-container background-dark-main mod-white-text u-center-text layout-centered">
+  <div class="board-slider-wrap">
+    <div class="board background-dark-main" style="display:block; z-index:1;"> 
+      <div class="layout-centered-content mod-white-text">
+        <p>The Design team shares updates on current projects</p>
+      </div>
+      <picture>
+        <source media="(min-width: 800px)" srcset="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/07ced7d72fcf302f25981df3d6fdb46f/usecases-board01.jpg 1x, https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/371849cc490bb134403a163247624663/usecases-board01@2x.jpg 2x">
+        <source srcset="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/f0455b0e7cbf32e0c66a5464ab6bc052/usecases-mobile-board01.jpg 1x, https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/716ab6d6713bc62480c772ee5f984b73/usecases-mobile-board01@2x.jpg 2x">
+        <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/07ced7d72fcf302f25981df3d6fdb46f/usecases-board01.jpg" alt="Company overview: need new picture">
+      </picture>
+    </div>
+    <div class="board background-dark-main" style="z-index:3; display:block;"> </div>
+    <div class="board background-dark-main" style="z-index:1; display:block;"> </div>
+    <div class="board background-dark-main" style="display:block; z-index:1;"> </div>
+    <div class="board background-dark-main" style="display:block; z-index:1;"> </div>
+  </div>
+ <div class="board-overlay background-dark-main"></div>
+</div>
 
 <!--Bootstrap script files-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
