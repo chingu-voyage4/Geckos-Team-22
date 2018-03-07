@@ -67,3 +67,9 @@
     margin-left: auto; }
     .navbar .btn-right-group-container .info-btn {
       display: none; } }
+
+main .container-fluid {
+  margin: 0 14.5px; }
+
+main section {
+  padding: 20px 16px 0 16px; }
