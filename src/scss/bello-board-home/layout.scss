@@ -10,7 +10,8 @@ $sm-margin: 10px;
     background: $blue-navbar;
     position: relative;
     /*Board Button*/
-    * {
+
+    & .navbar__btn-primary, & .search-wrapper, & .search-wrapper > .search-box {
         height: 100%;
     }
     .board-btn {
