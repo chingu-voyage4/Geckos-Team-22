@@ -77,3 +77,13 @@ $blue-search-hover-color: #74cae7;
     background: Transparent;
     @include removeOutsideLines();
 }
+
+
+
+.board-tile-primary {
+    @include border-radius(5px);
+    display: inline-block;
+    height: 96px;
+    width: 296.5px;
+    background: $blue-primary-color;
+}
