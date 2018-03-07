@@ -47,6 +47,9 @@
         </h2>
 
         <div class="btn-right-group-container">
+            <button class="pointer navbar__btn-primary navbar__btn--darken-bg" data-toggle="modal"  data-target="#singup">
+                <i class="fas fa-user-plus text-white"></i>
+            </button>
             <button class="pointer navbar__btn-primary navbar__btn--darken-bg">
                 <i class="fas fa-plus text-white"></i>
             </button>
@@ -62,11 +65,32 @@
         <!--btn-right-group-container ends-->
     </nav>
     <!--navbar ends-->
-
+    
     <!--JS scripts to make Bootstrap function properly-->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+
+    <div id="singup" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 
 </html>
