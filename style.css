@@ -1,3 +1,6 @@
+a.button.mod-primary, a.button.mod-transparent {
+  margin-right: 0;
+}
 .body{
   font-size:20px;
   font-weight: 300;
@@ -48,7 +51,66 @@ max-width: 650px;
 .background-dark-main{
   background: #315989;
 }
+
+.background-orange-sun {
+  background: #ffab4a;
+  background: -webkit-linear-gradient(90deg, #f06e47, #ffab4a);
+  background: linear-gradient(0deg,#f06e47, #ffab4a);
+}
+
+.background-red {
+  background: #eb5a46;
+}
+
+.background-light-purple {
+  background: #7b8fd1;
+}
+
+.background-sky{
+  background: #29cce5;
+}
+
+.background-business-blue {
+  background: #42548e;
+}
 .board-slider-wrap {
   position: relative
   height: 800px;
+}
+.board-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index: 5;
+  padding: 1em 0;
+}
+
+.card-detail {
+  overflow: hidden;
+}
+
+.card-detail img {
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.15);
+  margin-bottom: -3em;
+}
+
+.dream-team img {
+  border-radius: 4px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.15);
+  margin-bottom: -4em;
+  max-width: none;
+}
+.hide{
+  display: none;
+}
+
+.layout-two-up {
+  overflow:hidden;
+  padding:3em 0;
+ }
+ 
+.mod-image-right{
+  
 }
