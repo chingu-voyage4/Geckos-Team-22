@@ -15,3 +15,10 @@
 
 .pointer {
   cursor: pointer; }
+
+.modal-title a {
+  display: inline-block;
+  margin-right: 15px; }
+
+.modal-body button {
+  background-color: #2f889a; }

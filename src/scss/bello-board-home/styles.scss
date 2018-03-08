@@ -22,3 +22,19 @@ $grey-logo-color: #979797;
 .pointer {
     cursor: pointer;
 }
+
+// Styles for modal(singup/login form)
+
+.modal-title{
+ 
+    a{
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+.modal-body{
+
+    button{
+        background-color: #2f889a;
+    }
+}
