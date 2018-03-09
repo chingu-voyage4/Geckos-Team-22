@@ -78,12 +78,18 @@ $blue-search-hover-color: #74cae7;
     @include removeOutsideLines();
 }
 
-
-
-.board-tile-primary {
+//=====================
+//BOARD COMPONENTS
+//=====================
+.board-tile {
+    &-primary {
     @include border-radius(5px);
     display: inline-block;
     height: 96px;
     width: 296.5px;
     background: $blue-primary-color;
+        position: relative;
+    }
+
+}
 }
