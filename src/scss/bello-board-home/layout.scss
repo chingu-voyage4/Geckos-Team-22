@@ -1,0 +1,97 @@
+$blue-navbar: #026aa7;
+$white-primary-color: #ececec;
+$sm-margin: 10px;
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    align-items: center;
+    height: 40px;
+    background: $blue-navbar;
+    position: relative;
+    /*Board Button*/
+    * {
+        height: 100%;
+    }
+    .board-btn {
+        display: inline;
+        padding: 5px;
+        margin-right: $sm-margin;
+        * {
+            display: inline;
+        }
+        .board-text {
+            font-weight: bold;
+        }
+    }
+    /*Search Bar*/
+    .search-wrapper {
+        position: relative;
+        margin-right: $sm-margin;
+        .search-box {
+            width: 200px;
+            &:focus {
+                width: 300px;
+                background: $white-primary-color;
+                &~* {
+                    display: none;
+                }
+            }
+        }
+        .search-btn {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+    } //Navbar Logo
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-40%);
+        z-index: 1;
+    } //Right Group Buttons
+    .btn-right-group-container {
+        display: inline-flex;
+        margin-left: auto;
+        &>* {
+            margin-right: $sm-margin;
+        }
+        &>*:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        .board-btn {
+            position: static;
+            .board-text {
+                display: none;
+            }
+        }
+        .search-wrapper {
+            margin-left: 30px;
+            .search-box {
+                display: none;
+            }
+        }
+        .search-btn {
+            position: static;
+        }
+        .logo {
+            display: block;
+            position: static;
+            transform: translateY(0);
+            margin-left: auto;
+        }
+        .btn-right-group-container {
+            margin-left: auto;
+            .info-btn {
+                display: none;
+            }
+        }
+    }
+}

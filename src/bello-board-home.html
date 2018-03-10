@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Boards | Bello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Imported font for logo-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+    <!--Added bootstrap for the grid layout-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Using font awsome for the icons-->
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!--Reset.css gives every browser a default to work with-->
+    <link rel="stylesheet" href="css/bello-board-home/reset.css">
+
+    <!--Styles is for styling text, logo, and any non-component-->
+    <link rel="stylesheet" href="css/bello-board-home/styles.css">
+
+    <!--This is only for setting up the layout-->
+    <link rel="stylesheet" href="css/bello-board-home/layout.css">
+
+    <!--Styling for components and for changing how they work-->
+    <link rel="stylesheet" href="css/bello-board-home/components.css">
+</head>
+
+<body>
+    <!--NAVBAR BUILT BY SIMON-->
+    <nav class="navbar">
+
+        <!--Made btn-wrapper to make btn-text 
+            dissapear when screen gets smaller-->
+        <button class="navbar__btn-primary navbar__btn--darken-bg board-btn pointer">
+            <i class="text-white fas fa-clipboard"></i>
+            <p class="text-white board-text">Boards</p>
+        </button>
+        <div class="search-wrapper">
+            <input type="search" class="search-box navbar__search--highlight navbar__search-primary">
+
+            <button class="navbar__btn-primary pointer text-white search-btn">
+                <i class="fas fa-search fa-rotate-90"></i>
+            </button>
+        </div>
+
+        <h2 class="logo">
+            <a href="#">Bello</a>
+        </h2>
+
+        <div class="btn-right-group-container">
+            <button class="pointer navbar__btn-primary navbar__btn--darken-bg">
+                <i class="fas fa-plus text-white"></i>
+            </button>
+            <button class="pointer navbar__btn-primary navbar__btn--darken-bg info-btn">
+                <i class="fas fa-info-circle text-white"></i>
+            </button>
+            <button class="pointer navbar__btn-primary navbar__btn--darken-bg">
+                <i class="far fa-bell text-white"></i>
+            </button>
+            <button class="navbar__btn-circle navbar__btn-primary pointer navbar__btn--darken-bg text-white">SS
+            </button>
+        </div>
+        <!--btn-right-group-container ends-->
+    </nav>
+    <!--navbar ends-->
+
+    <!--JS scripts to make Bootstrap function properly-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
