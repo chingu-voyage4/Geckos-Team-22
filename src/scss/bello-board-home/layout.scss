@@ -1,6 +1,7 @@
 $blue-navbar: #026aa7;
 $white-primary-color: #ececec;
 $sm-margin: 10px;
+@import 'base';
 .navbar {
     display: flex;
     flex-direction: row;
@@ -17,19 +18,31 @@ $sm-margin: 10px;
         display: inline;
         padding: 5px;
         margin-right: $sm-margin;
+        @include device-sm-and-md {
+            position: static;
+        }
         * {
             display: inline;
         }
         .board-text {
             font-weight: bold;
+            @include device-sm-and-md {
+                display: none;
+            }
         }
     }
     /*Search Bar*/
     .search-wrapper {
         position: relative;
         margin-right: $sm-margin;
+        @include device-sm-and-md {
+            margin-left: 30px;
+        }
         .search-box {
             width: 200px;
+            @include device-sm-and-md {
+                display: none;
+            }
             &:focus {
                 width: 300px;
                 background: $white-primary-color;
@@ -43,6 +56,9 @@ $sm-margin: 10px;
             top: 0;
             bottom: 0;
             right: 0;
+            @include device-sm-and-md {
+                display: static;
+            }
         }
     } //Navbar Logo
     .logo {
@@ -51,6 +67,12 @@ $sm-margin: 10px;
         left: 50%;
         transform: translateY(-40%);
         z-index: 1;
+        @include device-sm-and-md {
+            display: block;
+            position: static;
+            transform: translateY(0);
+            margin-left: auto;
+        }
     } //Right Group Buttons
     .btn-right-group-container {
         display: inline-flex;
@@ -60,6 +82,11 @@ $sm-margin: 10px;
         }
         &>*:last-child {
             margin-right: 0;
+        }
+    }
+    .info-btn {
+        @include device-sm-and-md {
+            display: none;
         }
     }
 }
@@ -87,11 +114,15 @@ main {
             grid-row-gap: 16px;
             justify-content: start;
             align-items: center;
+            @include device-sm-and-md {
+                grid-template-columns: 1fr;
+            }
         }
     }
     .board-tile {
         position: relative;
         &-primary {
+            width: 100%;
             &:not(:hover) {
                 .board-tile__star--appear {
                     display: none;
@@ -122,50 +153,6 @@ main {
             bottom: 0;
             left: 0;
             z-index: 1;
-        }
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .navbar {
-        .board-btn {
-            position: static;
-            .board-text {
-                display: none;
-            }
-        }
-        .search-wrapper {
-            margin-left: 30px;
-            .search-box {
-                display: none;
-            }
-        }
-        .search-btn {
-            position: static;
-        }
-        .logo {
-            display: block;
-            position: static;
-            transform: translateY(0);
-            margin-left: auto;
-        }
-        .btn-right-group-container {
-            margin-left: auto;
-            .info-btn {
-                display: none;
-            }
-        }
-    }
-    main {
-        .boards {
-            &__grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        .board-tile {
-            &-primary {
-                width: 100%;
-            }
         }
     }
 }
