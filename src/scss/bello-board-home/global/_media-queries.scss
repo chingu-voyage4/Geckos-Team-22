@@ -1,0 +1,5 @@
+@mixin device-sm-and-md {
+    @media screen and (max-width: 650px) {
+        @content;
+    }
+}
