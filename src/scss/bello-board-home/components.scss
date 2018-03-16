@@ -10,16 +10,8 @@
 //-----------
 //==================
 
-//General Colors
-$white-primary-color: #ececec;
-$blue-primary-color: #0084ff;
+@import 'base';
 
-//Button Colors
-$blue-btn-hover-color: #0044ff;
-$blue-btn-active-color: #0000ff;
-
-//Search Colors
-$blue-search-hover-color: #74cae7;
 
 @mixin border-radius($radius) {
     /* Safari 3-4, iOS 1-3.2, Android 1.6- */
