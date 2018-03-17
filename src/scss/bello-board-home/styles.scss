@@ -1,10 +1,9 @@
+@import 'base';
 * {
     box-sizing: border-box;
     font: 1em/1.5 sans-serif;
 }
 
-$white-primary-color: #ececec;
-$grey-logo-color: #979797;
 
 .logo > a {
     text-decoration: none; /* no underline */
@@ -19,6 +18,13 @@ $grey-logo-color: #979797;
 }
 
 
+
 .pointer {
     cursor: pointer;
+}
+
+//Font Awsome Styles
+.fa-star {
+    color: white;
+    width: 100%;
 }
