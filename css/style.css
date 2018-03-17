@@ -1,0 +1,236 @@
+.announcement-banner {
+ background:#205081
+}
+.section-home-login+.global-header.mod-trello-blue {
+ background-color:#0079bf
+}
+.section-home-login+.global-header+.header-section {
+ margin-top:0 !important;
+ padding-top:3em !important
+}
+.section-home-login {
+ background:#026aa7;
+ color:white
+}
+.section-home-login .quiet {
+ color:#52a7d6
+}
+.section-home-login .quiet a,.section-home-login a.quiet {
+ color:#82bfe2
+}
+.section-home-login .quiet a:hover,.section-home-login .quiet a:active,.section-home-login a.quiet:hover,.section-home-login a.quiet:active {
+ color:#fff
+}
+.section-home-login #login,.login-google-button {
+ padding:.7em 5em
+}
+.section-home-login .google-button {
+ width:100%
+}
+.section-home-login #login,.login-sso-container .button {
+ margin:2em auto 1em !important;
+ display:block;
+ background:-webkit-linear-gradient(top, #61bd4f 0, #5aac44 100%);
+ background:linear-gradient(to bottom, #61bd4f 0, #5aac44 100%);
+ box-shadow:0 2px 0 #3f6f21;
+ color:#fff;
+ border:0;
+ border-radius:.3em;
+ cursor:pointer;
+ font-size:.9em;
+ font-weight:bold;
+ line-height:1.2;
+ outline:0;
+ position:relative;
+ text-decoration:none
+}
+.section-home-login #login:hover,.login-sso-container .button:hover {
+ background:-webkit-linear-gradient(top, #5aac44 0, #519839 100%);
+ background:linear-gradient(to bottom, #5aac44 0, #519839 100%);
+ color:#fff
+}
+.section-home-login .login-forget-password {
+ display:block;
+ margin:0 auto;
+ text-align:center;
+ font-size:.8em
+}
+.section-home-login .login-form {
+ width:430px;
+ max-width:100%;
+ margin:0 auto
+}
+.global-header.mod-trello-blue {
+ background:rgba(0,121,191,0);
+ -webkit-transition:background 1s ease 0s;
+ transition:background 1s ease 0s
+}
+.global-header.mod-trello-blue.scroll {
+ background:#0079bf
+}
+.header-section.layout-centered {
+ background:url(https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/d84b3c6b1f07d701acb1a153002f7e6a/usecases-bg.jpg) center left / cover no-repeat #0079bf
+}
+a.button.mod-primary,a.button.mod-transparent {
+ margin-right:0
+}
+.hide {
+ display:none
+}
+.background-blue {
+ background:#0079bf
+}
+.background-dark-bc {
+ background:#315989
+}
+.board-overlay.background-dark-bc {
+ background:rgba(37,66,109,0.9)
+}
+.background-darkest-bc {
+ background:#273e5a
+}
+.background-orange-sun {
+ background:#ffab4a;
+ background:-webkit-linear-gradient(90deg, #f06e47, #ffab4a);
+ background:linear-gradient(0deg, #f06e47, #ffab4a)
+}
+.background-red {
+ background:#eb5a46
+}
+.background-light-purple {
+ background:#7b8fd1
+}
+.background-sky {
+ background:#29cce5
+}
+.background-business-blue {
+ background:#42548e
+}
+.board-container {
+ position:relative;
+ padding-bottom:0;
+ overflow:hidden
+}
+.board-slider-wrap {
+ position:relative;
+ height:800px
+}
+.board.active {
+ z-index:3
+}
+.board {
+ position:absolute;
+ top:0;
+ left:0;
+ right:0;
+ z-index:1
+}
+.board img {
+ margin-top:1em;
+ border-radius:4px;
+ max-width:100%;
+ box-shadow:0 50px 30px 0 rgba(0,0,0,0.15)
+}
+.board p {
+ opacity:0;
+ -webkit-transform:translateY(20px);
+ transform:translateY(20px)
+}
+.board.active p {
+ opacity:1;
+ -webkit-transform:translateY(0);
+ transform:translateY(0);
+ -webkit-transition:all .8s ease .2s;
+ transition:all .8s ease .2s
+}
+.board-overlay {
+ position:absolute;
+ bottom:0;
+ left:0;
+ right:0;
+ z-index:5;
+ padding:1em 0
+}
+.card-detail {
+ overflow:hidden
+}
+.card-detail img {
+ border-radius:4px 4px 0 0;
+ box-shadow:0 10px 30px 0 rgba(0,0,0,0.15);
+ margin-bottom:-3em
+}
+.dream-teams img {
+ border-radius:4px;
+ box-shadow:0 10px 30px 0 rgba(0,0,0,0.15);
+ margin-bottom:-4em;
+ max-width:none
+}
+.power-ups {
+ padding-bottom:0
+}
+.power-ups .layout-two-up-content-text {
+ padding-bottom:3em
+}
+.power-ups a.button.mod-transparent.mod-dark-background {
+ background-color:rgba(0,0,0,0.15);
+ box-shadow:0 2px 0 rgba(0,0,0,0.3)
+}
+.power-ups a.button.mod-transparent.mod-dark-background:hover {
+ background-color:rgba(0,0,0,0.25)
+}
+.mobile {
+ position:relative
+}
+.mobile .layout-two-up-content-text {
+ position:relative;
+ z-index:3;
+ padding-bottom:5em
+}
+.taco-img-wrap {
+ position:absolute;
+ left:0;
+ right:0;
+ bottom:0;
+ z-index:1
+}
+.taco-img-wrap img {
+ width:1429px;
+ max-width:100%
+}
+.bc-logo {
+ margin-bottom:2em
+}
+@media only screen and (max-width:1000px) {
+ .board-slider-wrap {
+  height:680px
+ }
+}
+@media only screen and (max-width:1200px) {
+ .taco-img-wrap {
+  bottom:-40px
+ }
+ .dream-teams img {
+  margin-bottom:0
+ }
+}
+@media only screen and (min-width:1200px) {
+ .power-ups {
+  padding-bottom:0 !important
+ }
+}
+@media only screen and (max-width:800px) {
+ .card-detail img {
+  margin-bottom:0;
+  border-radius:4px
+ }
+}
+@media only screen and (max-width:600px) {
+ img {
+  box-shadow:none !important
+ }
+}
+@media only screen and (max-width:600px) {
+ img {
+  box-shadow:none !important
+ }
+}
