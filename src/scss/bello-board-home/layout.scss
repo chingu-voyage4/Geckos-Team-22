@@ -9,7 +9,7 @@
     background: $blue-navbar;
     position: relative;
     /*Board Button*/
-    * {
+    & > * {
         height: 100%;
     }
     .board-btn {
@@ -38,6 +38,7 @@
         }
         .search-box {
             width: 200px;
+            height: 100%;
             @include device-sm-and-md {
                 display: none;
             }
