@@ -58,7 +58,7 @@ Board.prototype = {
 
     },
     setFavorite: function () {
-
+        this.isFavorite = true;
     },
 };
 
@@ -67,8 +67,14 @@ const sections = {
     starredBoards: document.querySelector('#js-boards-starred-grid'),
 };
 
-function addBoard(boardSection) {
-    const board = new Board('Test2', 'board-tile-primary');
+const boardTypes = {
+    primary: 'board-tile-primary',
+};
 
+function addBoard(boardSection) {
+    const board = new Board('Test2', boardTypes.primary);
     boardSection.appendChild(board.create());
 }
+
+addBoard(sections.personalBoards);
+addBoard(sections.starredBoards);
