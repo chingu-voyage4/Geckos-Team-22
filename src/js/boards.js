@@ -1,34 +1,20 @@
-/* <div class="boards__grey-icon">
-</div>
-<h2 class="boards__section-title boards-starred">Starred Boards</h2>
-<div class="boards__grid">
-    <div class="board-tile-primary">
-        <a href="" class="board-tile__link"></a>
-        <div class="board-tile__rect-wrapper-sm">
-            <h2 class="board-tile__name">Test</h2>
-            <button class="board-tile__star board-tile__star--appear btn--transparent-bg">
-                <i class="fas fa-star"></i>
-            </button>
-        </div>
-    </div>
 
-</div> */
-
-
-function Board(width, height, name) {
-    this.width = width;
-    this.height = height;
+function Board(name,type) {
     this.name = name;
+    this.type = type;
     this.isFavorite = false;
 }
 
 Board.prototype = {
-    create: function (type, name) {
+    setName: function(name) {
+        this.name = name;
+    },
+    create: function () {
 
         //Board creation that houses all the elements
         const board = document.createElement('div');
-        Array.isArray(type) ? board.classList.add(...type) : board.classList.add(type);
-
+        Array.isArray(this.type) ? board.classList.add(...this.type) : board.classList.add(this.type);
+    
 
         //Rectangle to put name of board and fa button
         const boardRect = document.createElement('div');
@@ -36,12 +22,15 @@ Board.prototype = {
 
         //Set Name
         const boardName = document.createElement('h2');
-        boardName.textContent = name;
+        const nameClasses = ['board-tile__name'];
+        boardName.classList.add(...nameClasses);
+        boardName.textContent = this.name;
 
 
         //Link creation
         const boardLink = document.createElement('a');
         const linkClasses = ['board-tile__link'];
+        boardLink.classList.add(...linkClasses);
         boardLink.setAttribute('href', '#');
 
 
@@ -56,11 +45,14 @@ Board.prototype = {
         const starClasses = ['fas', 'fa-star'];
         star.classList.add(...starClasses);
 
+        //Board setup for the CSS to take effect
+        board.appendChild(boardLink);
         board.appendChild(boardRect);
-
         boardRect.appendChild(boardName);
         boardRect.appendChild(starBtn);
         starBtn.appendChild(star);
+
+        return board;
     },
     delete: function () {
 
@@ -69,3 +61,14 @@ Board.prototype = {
 
     },
 };
+
+const sections = {
+    personalBoards: document.querySelector('#js-boards-personal-grid'),
+    starredBoards: document.querySelector('#js-boards-starred-grid'),
+};
+
+function addBoard(boardSection) {
+    const board = new Board('Test2', 'board-tile-primary');
+
+    boardSection.appendChild(board.create());
+}

@@ -64,28 +64,34 @@
     <!--navbar ends-->
     <main>
         <section class="boards-container">
-            <div class="boards__grey-icon">
-            </div>
-            <h2 class="boards__section-title boards-starred">Starred Boards</h2>
-            <div class="boards__grid">
-                
-                </div>
 
+            <!-- Starred boards -->
+            <div class="boards boards-starred" id = "js-boards-starred">
+                <div class="boards__grey-icon">
+                </div>
+                <h2 class="boards__section-title boards-starred">Starred Boards</h2>
+                <div class="boards__grid" id = "js-boards-starred-grid">
+
+                </div>
             </div>
-            <div class="boards__grey-icon">
-            </div>
-            <h2 class="boards__section-title boards-personal">Personal Boards</h2>
-            <div class="boards__grid">
-                <div class="board-tile-primary">
-                    <a href="" class="board-tile__link"></a>
-                    <div class="board-tile__rect-wrapper-sm">
-                        <h2 class="board-tile__name">Test</h2>
-                        <button class="board-tile__star board-tile__star--appear btn--transparent-bg">
-                            <i class="fas fa-star"></i>
-                        </button>
+
+            <!-- Personal Boards -->
+            <div class="boards boards-personal" id = "js-boards-personal">
+                <div class="boards__grey-icon">
+                </div>
+                <h2 class="boards__section-title">Personal Boards</h2>
+
+                <div class="boards__grid" id = "js-boards-personal-grid">
+                    <div class="board-tile-primary">
+                        <a href="#" class="board-tile__link"></a>
+                        <div class="board-tile__rect-wrapper-sm">
+                            <h2 class="board-tile__name">Test</h2>
+                            <button class="board-tile__star board-tile__star--appear btn--transparent-bg">
+                                <i class="fas fa-star"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
